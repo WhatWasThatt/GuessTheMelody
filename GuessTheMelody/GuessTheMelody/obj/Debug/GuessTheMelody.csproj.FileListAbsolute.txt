@@ -1,0 +1,11 @@
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\bin\Debug\GuessTheMelody.exe.config
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\bin\Debug\GuessTheMelody.exe
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\bin\Debug\GuessTheMelody.pdb
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.csprojAssemblyReference.cache
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.Properties.Resources.resources
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.csproj.GenerateResource.cache
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.csproj.CoreCompileInputs.cache
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.exe
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.pdb
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.fMain.resources
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.fParam.resources
