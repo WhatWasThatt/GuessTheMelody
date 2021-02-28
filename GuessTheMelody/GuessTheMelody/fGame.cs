@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace GuessTheMelody
 {
     public partial class fGame : Form
     {
         Random rnd = new Random();
+        int musicDuration = Victorina.musicDuration;
 
         public fGame()
         {
@@ -21,10 +23,18 @@ namespace GuessTheMelody
 
         void MakeMusic()
         {
-            int n = rnd.Next(0, Victorina.list.Count);
-            WMP.URL = Victorina.list[n];
-            Victorina.list.RemoveAt(n);
-            lblMelodyCount.Text = Victorina.list.Count.ToString();
+            if (Victorina.list.Count == 0)
+            {
+                EndGame();
+            }
+            else
+            {
+                musicDuration = Victorina.musicDuration;
+                int n = rnd.Next(0, Victorina.list.Count);
+                WMP.URL = Victorina.list[n];
+                Victorina.list.RemoveAt(n);
+                lblMelodyCount.Text = Victorina.list.Count.ToString();
+            }
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -35,6 +45,11 @@ namespace GuessTheMelody
 
         private void fGame_FormClosed(object sender, FormClosedEventArgs e)
         {
+            EndGame();
+        }
+
+        void EndGame()
+        {
             timer1.Stop();
             WMP.Ctlcontrols.stop();
         }
@@ -44,15 +59,23 @@ namespace GuessTheMelody
             lblMelodyCount.Text = Victorina.list.Count.ToString();
             progressBar1.Value = 0;
             progressBar1.Minimum = 0;
-            progressBar1.Maximum = Victorina.musicDuration;
+            progressBar1.Maximum = Victorina.gameDuration;
+            lblMusicDuration.Text = musicDuration.ToString();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             progressBar1.Value++;
+            musicDuration--;
+            lblMusicDuration.Text = musicDuration.ToString();
             if (progressBar1.Value == progressBar1.Maximum)
             {
-                timer1.Stop();
+                EndGame();
+                return;
+            }
+            if(musicDuration == 0)
+            {
+                MakeMusic();
             }
         }
 
@@ -83,7 +106,11 @@ namespace GuessTheMelody
             if(e.KeyData == Keys.X)
             {
                 GamePause();
-                if (MessageBox.Show("Correct answer?", "Player 1", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                fMessage fm = new fMessage();
+                fm.lblMessage.Text = "Player 1";
+                SoundPlayer sp = new SoundPlayer("Properties\\p1.wav");
+                sp.PlaySync();
+                if (fm.ShowDialog() == DialogResult.Yes)
                 {
                     lblCounter1.Text = Convert.ToString(Convert.ToInt32(lblCounter1.Text) + 1);
                     //MakeMusic();
@@ -93,12 +120,27 @@ namespace GuessTheMelody
             if (e.KeyData == Keys.M)
             {
                 GamePause();
-                if (MessageBox.Show("Correct answer?", "Player 2", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                fMessage fm = new fMessage();
+                fm.lblMessage.Text = "Player 2";
+                SoundPlayer sp = new SoundPlayer("Properties\\p2.wav");
+                sp.PlaySync();
+                if (fm.ShowDialog() == DialogResult.Yes)
                 {
                     lblCounter2.Text = Convert.ToString(Convert.ToInt32(lblCounter2.Text) + 1);
                     //MakeMusic();
                 }
                 GamePlay();
+            }
+        }
+
+        private void WMP_OpenStateChange(object sender, AxWMPLib._WMPOCXEvents_OpenStateChangeEvent e)
+        {
+            if (Victorina.randomStart)
+            {
+                if (WMP.openState == WMPLib.WMPOpenState.wmposMediaOpen)
+                {
+                    WMP.Ctlcontrols.currentPosition = rnd.Next(0, (int)WMP.currentMedia.duration / 2);
+                }
             }
         }
     }

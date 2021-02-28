@@ -15,3 +15,9 @@ C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\
 C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.csproj.ResolveComReference.cache
 C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.fGame.resources
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.fMessage.resources
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\bin\Debug\Properties\time.wav
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\bin\Debug\Properties\player1.wav
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\bin\Debug\Properties\player2.wav
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\bin\Debug\Properties\p1.wav
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\bin\Debug\Properties\p2.wav

@@ -42,6 +42,7 @@ namespace GuessTheMelody
             this.lblMelodyCount = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblMusicDuration = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.WMP)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +55,7 @@ namespace GuessTheMelody
             this.WMP.Size = new System.Drawing.Size(266, 47);
             this.WMP.TabIndex = 0;
             this.WMP.Visible = false;
+            this.WMP.OpenStateChange += new AxWMPLib._WMPOCXEvents_OpenStateChangeEventHandler(this.WMP_OpenStateChange);
             // 
             // btnNext
             // 
@@ -132,7 +134,7 @@ namespace GuessTheMelody
             // 
             this.lblMelodyCount.AutoSize = true;
             this.lblMelodyCount.Font = new System.Drawing.Font("Old English Text MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMelodyCount.Location = new System.Drawing.Point(299, 210);
+            this.lblMelodyCount.Location = new System.Drawing.Point(299, 212);
             this.lblMelodyCount.Name = "lblMelodyCount";
             this.lblMelodyCount.Size = new System.Drawing.Size(24, 26);
             this.lblMelodyCount.TabIndex = 8;
@@ -150,12 +152,24 @@ namespace GuessTheMelody
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lblMusicDuration
+            // 
+            this.lblMusicDuration.AutoSize = true;
+            this.lblMusicDuration.Font = new System.Drawing.Font("Old English Text MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMusicDuration.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblMusicDuration.Location = new System.Drawing.Point(293, 135);
+            this.lblMusicDuration.Name = "lblMusicDuration";
+            this.lblMusicDuration.Size = new System.Drawing.Size(30, 32);
+            this.lblMusicDuration.TabIndex = 10;
+            this.lblMusicDuration.Text = "0";
+            // 
             // fGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(615, 570);
+            this.Controls.Add(this.lblMusicDuration);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.lblMelodyCount);
             this.Controls.Add(this.btnContinue);
@@ -192,5 +206,6 @@ namespace GuessTheMelody
         private System.Windows.Forms.Label lblMelodyCount;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblMusicDuration;
     }
 }

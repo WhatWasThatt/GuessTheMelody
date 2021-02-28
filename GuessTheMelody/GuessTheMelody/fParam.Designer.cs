@@ -29,6 +29,7 @@ namespace GuessTheMelody
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fParam));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnSelectFolder = new System.Windows.Forms.Button();
             this.btnClearList = new System.Windows.Forms.Button();
@@ -237,8 +238,9 @@ namespace GuessTheMelody
             this.Controls.Add(this.btnClearList);
             this.Controls.Add(this.btnSelectFolder);
             this.Controls.Add(this.listBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fParam";
-            this.Text = "fParam";
+            this.Text = "Options";
             this.Load += new System.EventHandler(this.fParam_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
