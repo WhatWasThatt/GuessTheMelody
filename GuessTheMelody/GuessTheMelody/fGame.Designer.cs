@@ -97,6 +97,7 @@ namespace GuessTheMelody
             this.lblCounter1.Size = new System.Drawing.Size(24, 26);
             this.lblCounter1.TabIndex = 4;
             this.lblCounter1.Text = "0";
+            this.lblCounter1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCounter1_MouseClick);
             // 
             // lblCounter2
             // 
@@ -107,6 +108,7 @@ namespace GuessTheMelody
             this.lblCounter2.Size = new System.Drawing.Size(24, 26);
             this.lblCounter2.TabIndex = 5;
             this.lblCounter2.Text = "0";
+            this.lblCounter2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCounter1_MouseClick);
             // 
             // btnPause
             // 
