@@ -59,7 +59,7 @@ namespace GuessTheMelody
             // 
             // btnNext
             // 
-            this.btnNext.Font = new System.Drawing.Font("Old English Text MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Font = new System.Drawing.Font("Georgia", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnNext.Location = new System.Drawing.Point(12, 334);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(266, 79);
@@ -71,30 +71,31 @@ namespace GuessTheMelody
             // lblPlayer1
             // 
             this.lblPlayer1.AutoSize = true;
-            this.lblPlayer1.Font = new System.Drawing.Font("Old English Text MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer1.Location = new System.Drawing.Point(54, 58);
+            this.lblPlayer1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPlayer1.Location = new System.Drawing.Point(46, 58);
             this.lblPlayer1.Name = "lblPlayer1";
-            this.lblPlayer1.Size = new System.Drawing.Size(93, 26);
+            this.lblPlayer1.Size = new System.Drawing.Size(108, 31);
             this.lblPlayer1.TabIndex = 2;
             this.lblPlayer1.Text = "Player 1";
             // 
             // lblPlayer2
             // 
             this.lblPlayer2.AutoSize = true;
-            this.lblPlayer2.Font = new System.Drawing.Font("Old English Text MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer2.Location = new System.Drawing.Point(492, 58);
+            this.lblPlayer2.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPlayer2.Location = new System.Drawing.Point(468, 58);
             this.lblPlayer2.Name = "lblPlayer2";
-            this.lblPlayer2.Size = new System.Drawing.Size(93, 26);
+            this.lblPlayer2.Size = new System.Drawing.Size(111, 31);
             this.lblPlayer2.TabIndex = 3;
             this.lblPlayer2.Text = "Player 2";
+            this.lblPlayer2.Click += new System.EventHandler(this.lblPlayer2_Click);
             // 
             // lblCounter1
             // 
             this.lblCounter1.AutoSize = true;
-            this.lblCounter1.Font = new System.Drawing.Font("Old English Text MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCounter1.Location = new System.Drawing.Point(89, 141);
+            this.lblCounter1.Font = new System.Drawing.Font("Georgia", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCounter1.Location = new System.Drawing.Point(81, 135);
             this.lblCounter1.Name = "lblCounter1";
-            this.lblCounter1.Size = new System.Drawing.Size(24, 26);
+            this.lblCounter1.Size = new System.Drawing.Size(37, 38);
             this.lblCounter1.TabIndex = 4;
             this.lblCounter1.Text = "0";
             this.lblCounter1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCounter1_MouseClick);
@@ -102,17 +103,17 @@ namespace GuessTheMelody
             // lblCounter2
             // 
             this.lblCounter2.AutoSize = true;
-            this.lblCounter2.Font = new System.Drawing.Font("Old English Text MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCounter2.Location = new System.Drawing.Point(531, 141);
+            this.lblCounter2.Font = new System.Drawing.Font("Georgia", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCounter2.Location = new System.Drawing.Point(508, 135);
             this.lblCounter2.Name = "lblCounter2";
-            this.lblCounter2.Size = new System.Drawing.Size(24, 26);
+            this.lblCounter2.Size = new System.Drawing.Size(37, 38);
             this.lblCounter2.TabIndex = 5;
             this.lblCounter2.Text = "0";
             this.lblCounter2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCounter1_MouseClick);
             // 
             // btnPause
             // 
-            this.btnPause.Font = new System.Drawing.Font("Old English Text MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPause.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPause.Location = new System.Drawing.Point(319, 347);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(119, 42);
@@ -123,7 +124,7 @@ namespace GuessTheMelody
             // 
             // btnContinue
             // 
-            this.btnContinue.Font = new System.Drawing.Font("Old English Text MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContinue.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnContinue.Location = new System.Drawing.Point(474, 347);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(119, 42);
@@ -135,10 +136,10 @@ namespace GuessTheMelody
             // lblMelodyCount
             // 
             this.lblMelodyCount.AutoSize = true;
-            this.lblMelodyCount.Font = new System.Drawing.Font("Old English Text MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMelodyCount.Location = new System.Drawing.Point(299, 212);
+            this.lblMelodyCount.Font = new System.Drawing.Font("Georgia", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblMelodyCount.Location = new System.Drawing.Point(287, 203);
             this.lblMelodyCount.Name = "lblMelodyCount";
-            this.lblMelodyCount.Size = new System.Drawing.Size(24, 26);
+            this.lblMelodyCount.Size = new System.Drawing.Size(37, 38);
             this.lblMelodyCount.TabIndex = 8;
             this.lblMelodyCount.Text = "0";
             // 
@@ -157,11 +158,11 @@ namespace GuessTheMelody
             // lblMusicDuration
             // 
             this.lblMusicDuration.AutoSize = true;
-            this.lblMusicDuration.Font = new System.Drawing.Font("Old English Text MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMusicDuration.Font = new System.Drawing.Font("Georgia", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblMusicDuration.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblMusicDuration.Location = new System.Drawing.Point(293, 135);
+            this.lblMusicDuration.Location = new System.Drawing.Point(287, 102);
             this.lblMusicDuration.Name = "lblMusicDuration";
-            this.lblMusicDuration.Size = new System.Drawing.Size(30, 32);
+            this.lblMusicDuration.Size = new System.Drawing.Size(37, 38);
             this.lblMusicDuration.TabIndex = 10;
             this.lblMusicDuration.Text = "0";
             // 
@@ -170,6 +171,7 @@ namespace GuessTheMelody
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(615, 570);
             this.Controls.Add(this.lblMusicDuration);
             this.Controls.Add(this.progressBar1);

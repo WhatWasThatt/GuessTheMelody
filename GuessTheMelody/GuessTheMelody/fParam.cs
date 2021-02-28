@@ -18,6 +18,7 @@ namespace GuessTheMelody
             InitializeComponent();
         }
 
+        //считывание данных в класс vict
         private void btnOk_Click(object sender, EventArgs e)
         {
             Victorina.allDirectories = cbAllDirectory.Checked;

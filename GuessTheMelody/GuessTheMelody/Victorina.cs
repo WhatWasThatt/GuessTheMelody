@@ -18,6 +18,7 @@ namespace GuessTheMelody
         static public bool allDirectories = false;
         static public string answer = "";
         
+        //считывание и сохранение музыки в списке
         static public void ReadMusic()
         {
             try
@@ -32,7 +33,8 @@ namespace GuessTheMelody
         }
 
         static string regKeyName = "Software\\MyCompanyName\\GuessTheMelody";
-
+        
+        //запись данных в реестр
         public static void WriteParam()
         {
             RegistryKey rk = null;
@@ -52,6 +54,7 @@ namespace GuessTheMelody
             }
         }
 
+        //считывание данных из реестра
         public static void ReadParam()
         {
             RegistryKey rk = null;

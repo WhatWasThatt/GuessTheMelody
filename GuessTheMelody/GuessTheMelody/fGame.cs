@@ -106,6 +106,7 @@ namespace GuessTheMelody
             WMP.Ctlcontrols.play();
         }
 
+        //проверка по нажатию кнопки и дальнейшие возможности
         private void fGame_KeyDown(object sender, KeyEventArgs e)
         {
             if(!timer1.Enabled)
@@ -165,6 +166,11 @@ namespace GuessTheMelody
             {
                 (sender as Label).Text = Convert.ToString(Convert.ToInt32((sender as Label).Text) - 1);
             }
+        }
+
+        private void lblPlayer2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

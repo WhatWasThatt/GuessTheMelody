@@ -34,7 +34,6 @@ namespace GuessTheMelody
             this.lblMessage = new System.Windows.Forms.Label();
             this.btnYes = new System.Windows.Forms.Button();
             this.btnNo = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblTimer = new System.Windows.Forms.Label();
             this.lblShowAnswer = new System.Windows.Forms.Label();
@@ -43,17 +42,17 @@ namespace GuessTheMelody
             // lblMessage
             // 
             this.lblMessage.AutoSize = true;
-            this.lblMessage.Font = new System.Drawing.Font("Old English Text MT", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage.Location = new System.Drawing.Point(219, 38);
+            this.lblMessage.Font = new System.Drawing.Font("Georgia", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblMessage.Location = new System.Drawing.Point(188, 64);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(89, 34);
+            this.lblMessage.Size = new System.Drawing.Size(151, 56);
             this.lblMessage.TabIndex = 0;
             this.lblMessage.Text = "label1";
             // 
             // btnYes
             // 
             this.btnYes.DialogResult = System.Windows.Forms.DialogResult.Yes;
-            this.btnYes.Font = new System.Drawing.Font("Old English Text MT", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYes.Font = new System.Drawing.Font("Georgia", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnYes.Location = new System.Drawing.Point(64, 456);
             this.btnYes.Name = "btnYes";
             this.btnYes.Size = new System.Drawing.Size(180, 62);
@@ -64,22 +63,13 @@ namespace GuessTheMelody
             // btnNo
             // 
             this.btnNo.DialogResult = System.Windows.Forms.DialogResult.No;
-            this.btnNo.Font = new System.Drawing.Font("Old English Text MT", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNo.Font = new System.Drawing.Font("Georgia", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnNo.Location = new System.Drawing.Point(279, 456);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(180, 62);
             this.btnNo.TabIndex = 2;
             this.btnNo.Text = "No";
             this.btnNo.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Old English Text MT", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(114, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 66);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "Your answer?";
             // 
             // timer1
             // 
@@ -89,20 +79,21 @@ namespace GuessTheMelody
             // lblTimer
             // 
             this.lblTimer.AutoSize = true;
-            this.lblTimer.Font = new System.Drawing.Font("Old English Text MT", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimer.Location = new System.Drawing.Point(206, 199);
+            this.lblTimer.Font = new System.Drawing.Font("Georgia", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTimer.Location = new System.Drawing.Point(211, 194);
             this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(98, 114);
+            this.lblTimer.Size = new System.Drawing.Size(106, 109);
             this.lblTimer.TabIndex = 4;
             this.lblTimer.Text = "0";
+            this.lblTimer.Click += new System.EventHandler(this.lblTimer_Click);
             // 
             // lblShowAnswer
             // 
             this.lblShowAnswer.AutoSize = true;
-            this.lblShowAnswer.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowAnswer.Location = new System.Drawing.Point(12, 333);
+            this.lblShowAnswer.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblShowAnswer.Location = new System.Drawing.Point(12, 343);
             this.lblShowAnswer.Name = "lblShowAnswer";
-            this.lblShowAnswer.Size = new System.Drawing.Size(101, 18);
+            this.lblShowAnswer.Size = new System.Drawing.Size(88, 16);
             this.lblShowAnswer.TabIndex = 5;
             this.lblShowAnswer.Text = "Show answer";
             this.lblShowAnswer.Click += new System.EventHandler(this.lblShowAnswer_Click);
@@ -111,10 +102,11 @@ namespace GuessTheMelody
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 557);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(519, 557);
             this.Controls.Add(this.lblShowAnswer);
             this.Controls.Add(this.lblTimer);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnYes);
             this.Controls.Add(this.lblMessage);
@@ -132,7 +124,6 @@ namespace GuessTheMelody
         private System.Windows.Forms.Button btnYes;
         private System.Windows.Forms.Button btnNo;
         public System.Windows.Forms.Label lblMessage;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblTimer;
         private System.Windows.Forms.Label lblShowAnswer;

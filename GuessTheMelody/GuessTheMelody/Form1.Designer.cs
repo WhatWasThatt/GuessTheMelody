@@ -37,38 +37,61 @@ namespace GuessTheMelody
             // 
             // btnPlay
             // 
+            this.btnPlay.BackColor = System.Drawing.Color.Black;
             this.btnPlay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPlay.BackgroundImage")));
+            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPlay.Font = new System.Drawing.Font("Old English Text MT", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlay.ForeColor = System.Drawing.Color.Black;
+            this.btnPlay.Image = ((System.Drawing.Image)(resources.GetObject("btnPlay.Image")));
+            this.btnPlay.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPlay.ImageKey = "(отсутствует)";
             this.btnPlay.Location = new System.Drawing.Point(161, 127);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(0);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(302, 75);
             this.btnPlay.TabIndex = 0;
             this.btnPlay.Text = "Play";
-            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.UseVisualStyleBackColor = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // btnParams
             // 
+            this.btnParams.BackColor = System.Drawing.Color.Black;
             this.btnParams.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnParams.BackgroundImage")));
+            this.btnParams.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnParams.Font = new System.Drawing.Font("Old English Text MT", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParams.ForeColor = System.Drawing.Color.Black;
+            this.btnParams.Image = ((System.Drawing.Image)(resources.GetObject("btnParams.Image")));
+            this.btnParams.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnParams.ImageKey = "(отсутствует)";
             this.btnParams.Location = new System.Drawing.Point(161, 268);
+            this.btnParams.Margin = new System.Windows.Forms.Padding(0);
             this.btnParams.Name = "btnParams";
             this.btnParams.Size = new System.Drawing.Size(302, 75);
             this.btnParams.TabIndex = 1;
             this.btnParams.Text = "Options";
-            this.btnParams.UseVisualStyleBackColor = true;
+            this.btnParams.UseVisualStyleBackColor = false;
             this.btnParams.Click += new System.EventHandler(this.btnParams_Click);
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.Black;
             this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExit.Font = new System.Drawing.Font("Old English Text MT", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExit.ImageKey = "(отсутствует)";
             this.btnExit.Location = new System.Drawing.Point(161, 408);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(302, 75);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // fMain

@@ -47,5 +47,10 @@ namespace GuessTheMelody
         {
             lblShowAnswer.Text = Victorina.answer;
         }
+
+        private void lblTimer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
