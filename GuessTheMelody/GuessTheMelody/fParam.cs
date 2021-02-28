@@ -20,11 +20,17 @@ namespace GuessTheMelody
 
         private void btnOk_Click(object sender, EventArgs e)
         {
+            Victorina.allDirectories = cbAllDirectory.Checked;
+            Victorina.gameDuration = Convert.ToInt32(cbGameDuration.Text);
+            Victorina.musicDuration = Convert.ToInt32(cbMusicDuration.Text);
+            Victorina.randomStart = cbRandomStart.Checked;
+            Victorina.WriteParam();
             this.Hide();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            Set();
             this.Hide();
         }
 
@@ -34,9 +40,31 @@ namespace GuessTheMelody
             if(fbd.ShowDialog() == DialogResult.OK)
             {
                 string[] music_list = Directory.GetFiles(fbd.SelectedPath, "*.mp3", cbAllDirectory.Checked ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly);
+                Victorina.lastFolder = fbd.SelectedPath;
                 listBox1.Items.Clear();
                 listBox1.Items.AddRange(music_list);
+                Victorina.list.Clear();
+                Victorina.list.AddRange(music_list);
             };
+        }
+
+        private void cbAllDirectory_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        void Set()
+        {
+            cbAllDirectory.Checked = Victorina.allDirectories;
+            cbGameDuration.Text = Victorina.gameDuration.ToString();
+            cbMusicDuration.Text = Victorina.musicDuration.ToString();
+            cbRandomStart.Checked = Victorina.randomStart;
+        }
+        private void fParam_Load(object sender, EventArgs e)
+        {
+            Set();
+            listBox1.Items.Clear();
+            listBox1.Items.AddRange(Victorina.list.ToArray());
         }
     }
 }

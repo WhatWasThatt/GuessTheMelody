@@ -13,6 +13,7 @@ namespace GuessTheMelody
     public partial class fMain : Form
     {
         fParam fp = new fParam();
+        fGame fg = new fGame();
 
         public fMain()
         {
@@ -31,7 +32,13 @@ namespace GuessTheMelody
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
+            fg.ShowDialog();
+        }
 
+        private void fMain_Load(object sender, EventArgs e)
+        {
+            Victorina.ReadParam();
+            Victorina.ReadMusic();
         }
     }
 }

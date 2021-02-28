@@ -9,3 +9,9 @@ C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\
 C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.pdb
 C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.fMain.resources
 C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.fParam.resources
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\bin\Debug\Interop.WMPLib.dll
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\Interop.WMPLib.dll
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.csproj.ResolveComReference.cache
+C:\Users\YAUHENI KAROL\Desktop\GuessTheMelody\GuessTheMelody\GuessTheMelody\obj\Debug\GuessTheMelody.fGame.resources
